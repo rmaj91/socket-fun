@@ -4,12 +4,12 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 
+import static com.rmaj91.Constants.SERVER_PORT;
+
 public class UdpSocketServer {
 
-    public static final int PORT = 9999;
-
     public static void main(String[] args) throws IOException {
-        DatagramSocket datagramSocket = new DatagramSocket(PORT);
+        DatagramSocket datagramSocket = new DatagramSocket(SERVER_PORT);
         byte[] buffer = new byte[256];
         DatagramPacket datagramPacket = new DatagramPacket(buffer, buffer.length);
         long start = System.nanoTime();

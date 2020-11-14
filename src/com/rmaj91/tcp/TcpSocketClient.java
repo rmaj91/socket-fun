@@ -7,9 +7,9 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class TcpSocketClient {
+import static com.rmaj91.Constants.SERVER_PORT;
 
-    public static final int SERVER_PORT = 9999;
+public class TcpSocketClient {
 
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket(InetAddress.getLocalHost(), SERVER_PORT);

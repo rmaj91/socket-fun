@@ -7,9 +7,9 @@ import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class TcpSocketServer {
+import static com.rmaj91.Constants.SERVER_PORT;
 
-    public static final int SERVER_PORT = 9999;
+public class TcpSocketServer {
 
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = new ServerSocket(SERVER_PORT);
